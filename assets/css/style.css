@@ -1,0 +1,63 @@
+.apps-week-view-calendar-wrap {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.apps-week-view-calendar-nav-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apps-week-view-calendar-nav:disabled {
+    cursor: not-allowed;
+}
+
+.apps-week-view-calendar {
+    border: 1px solid #ccc;
+    padding: 30px 10px 30px 30px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.apps-calendar-day {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.apps-calendar-day:last-child {
+    border-bottom: none;
+}
+
+.apps-calendar-date {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.apps-week-view-calendar-wrap .apps-rs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+.apps-week-view-calendar-wrap .apps-rs-list .apps-rs-list-item {
+    flex: 0 0 calc(33.33% - 30px);
+    box-sizing: border-box;
+    padding: 20px;
+    border : 1px solid #000;
+}
+
+.apps-week-view-calendar-wrap .apps-rs-list .apps-rs-list-item.apps-rs-list-fullwidth-item {
+    flex: 0 0 calc(100% - 30px);
+}
+
+@media only screen and (max-width: 1200px) {
+    .apps-week-view-calendar-wrap {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .apps-week-view-calendar-wrap .apps-rs-list .apps-rs-list-item {
+        flex: 0 0 calc(50% - 30px);
+    }
+}

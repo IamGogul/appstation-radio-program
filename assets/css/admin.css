@@ -1,0 +1,22 @@
+.rp-date-fields {
+    margin-bottom: 20px;
+}
+
+.rp-date-fields, .rp-time-slots {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.rp-time-slots-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.rp-time-fields {
+    flex: 0 0 calc(50% - 30px);
+    box-sizing: border-box;
+    padding: 0 20px 20px;
+    border : 1px solid #000;
+}
